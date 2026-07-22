@@ -97,7 +97,7 @@ data "aws_iam_policy_document" "deployer_concat" {
 
 module "deployer_role_policy" {
   source  = "terraform-aws-modules/iam/aws//modules/iam-policy"
-  version = ">= 5.3.0"
+  version = "~> 5.3"
 
   create_policy = true
 

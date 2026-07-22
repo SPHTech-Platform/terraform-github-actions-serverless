@@ -134,7 +134,7 @@ data "aws_iam_policy_document" "cf_execution_concat" {
 
 module "cf_execution_role_policy" {
   source  = "terraform-aws-modules/iam/aws//modules/iam-policy"
-  version = ">= 5.3.0"
+  version = "~> 5.3"
 
   create_policy = true
 
@@ -146,7 +146,7 @@ module "cf_execution_role_policy" {
 
 module "cf_execution_assume_role" {
   source  = "terraform-aws-modules/iam/aws//modules/iam-assumable-role"
-  version = ">= 5.3.0"
+  version = "~> 5.3"
 
   create_role = true
 
